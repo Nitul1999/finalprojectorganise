@@ -1,0 +1,240 @@
+/* .slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100px;
+  padding: 2px;
+}
+
+.slide {
+  display: none;
+}
+
+.image-container {
+  position: relative;
+  z-index: -1;
+}
+
+.event-description {
+  position: absolute;
+  top: 240px;
+  left: 80px;
+  right: 80px;
+  color: white;
+  font-size: 20px;
+}
+
+.event-name {
+  position: absolute;
+  top: 130px;
+  left: 35%;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.event-price {
+  position: absolute;
+  top: 400px;
+  left: 80px;
+  border: 1px solid orange;
+  font-size: 24px;
+  color: white;
+  background-color: #45a049;
+  padding: 10px;
+  border: #45a049;
+  box-sizing: border-box;
+}
+
+.event-rating {
+  position: absolute;
+  top: 450px;
+  left: 20%;
+  font-size: 24px;
+  color: white;
+}
+
+.active {
+  display: block;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.star-rating {
+  color: gold;
+}
+
+.book-now {
+  position: absolute;
+  top: 450px;
+  left: 80%;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.book-now:hover {
+  background-color: #45a049;
+} */
+
+/* slider.css */
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.image-container {
+  position: relative;
+  z-index: -1;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.content-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.event-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.event-price {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.event-rating {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.book-now {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-now:hover {
+  background-color: #45a049;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+  z-index: 1;
+}
+
+/* slider.css */
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 600px;
+  /* max-height: fit-content; */
+  object-fit: cover;
+  display: block;
+}
+
+.content-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  transition: all 0.5s ease;
+}

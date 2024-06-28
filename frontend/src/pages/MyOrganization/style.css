@@ -1,0 +1,109 @@
+/* Add this CSS to your existing style.css file */
+
+/* General styles */
+
+.org-outer-section {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.org-section {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.myorg p {
+  margin: 5px 0;
+  color: black;
+}
+
+.heading-org {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.heading-org p {
+  font-size: 20px;
+}
+
+/* Services styles */
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.service-box {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: default;
+}
+
+/* Form styles */
+
+.form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.form-container button {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Button styles */
+
+.items {
+  margin-top: 20px;
+}
+
+.items button {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+  .form-popup {
+    width: 90%;
+    padding: 20px;
+  }
+  .items button {
+    margin-bottom: 10px;
+  }
+  .items button:last-child {
+    margin-bottom: 0;
+  }
+}

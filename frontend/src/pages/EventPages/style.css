@@ -1,0 +1,15 @@
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#h1 {
+  font-size: 40px;
+  margin: 0 45%;
+  padding: 20px;
+}
+/* .container{
+  background-color: bisque;
+  width: 100%;
+} */
